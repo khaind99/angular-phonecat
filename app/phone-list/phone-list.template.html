@@ -2,7 +2,6 @@
   <div class="row">
     <div class="col-md-2">
       <!--Sidebar content-->
-
       <p>
         Search:
         <input ng-model="$ctrl.query" />
@@ -22,7 +21,7 @@
 
       <ul class="phones">
         <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp"
-            class="thumbnail phone-list-item">
+          class="thumbnail phone-list-item">
           <a href="#!/phones/{{phone.id}}" class="thumb">
             <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
           </a>
